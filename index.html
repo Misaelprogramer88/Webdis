@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webdis - Agencia de Diseño Web Premium</title>
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Animación de Fondo a Pantalla Completa -->
+    <div class="bg-animation">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3 brand-text" href="#">Webdis<span class="dot">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#process">Proceso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Precios</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary rounded-pill px-4 hero-btn" href="#contact">Contactar Ahora</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero d-flex align-items-center position-relative">
+        <div class="container position-relative z-index-1">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 text-center text-lg-start" data-aos="fade-right" data-aos-duration="1000">
+                    <span class="badge bg-pastel-pink text-dark rounded-pill mb-3 px-3 py-2 fw-semibold shadow-sm">Impulsa tu Marca 🚀</span>
+                    <h1 class="display-3 fw-bolder mb-4 text-dark hero-title">Diseño Web que Enamora e Inspira.</h1>
+                    <p class="lead text-secondary mb-5 pe-lg-5">En Webdis, transformamos tus ideas en experiencias digitales visualmente atractivas, fluidas y diseñadas para convertir visitas en clientes.</p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#services" class="btn btn-primary rounded-pill btn-lg px-5 shadow-sm hero-btn">Ver Nuestros Diseños</a>
+                        <a href="#contact" class="btn btn-outline-dark rounded-pill btn-lg px-5 hover-lift">Hablar con Expertos <i class="fa-solid fa-arrow-right ms-2 mt-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0 text-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <!-- Animación Lottie de Placeholder -->
+                    <div class="hero-image-wrapper mx-auto">
+                        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                        <lottie-player src="https://lottie.host/80aebfe5-78e7-49cd-a249-f54c9fa30ed8/Vw0Ue5a9yQ.json" background="transparent" speed="1" style="width: 100%; max-width: 600px; height: auto;" loop autoplay></lottie-player>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Onda inferior (Divider) -->
+        <div class="custom-shape-divider-bottom-1698260000">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,119.62,195.03,109.11,236.4,102.32,279.38,71.59,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 position-relative">
+        <div class="container py-5 z-index-1">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="text-pink fw-bold text-uppercase tracking-wide">Nuestra Especialidad</span>
+                <h2 class="display-5 fw-bold mt-2">Páginas Web a Medida</h2>
+                <p class="text-muted mx-auto" style="max-width: 600px;">Servicios premium enfocados en la estética, el rendimiento y la experiencia de usuario (UX/UI).</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Servicio 1 -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="service-card p-5 text-center h-100 position-relative mt-4">
+                        <div class="icon-box bg-pastel-blue text-primary mb-4 mx-auto d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-laptop-code fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Diseño Corporativo</h4>
+                        <p class="text-muted mb-0">Atrae inversores y clientes con una presencia corporativa impecable, rápida y adaptada a móviles.</p>
+                    </div>
+                </div>
+                <!-- Servicio 2 -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="service-card p-5 text-center h-100 position-relative featured-card shadow-lg">
+                        <div class="badge bg-pink text-white position-absolute top-0 start-50 translate-middle rounded-pill px-3 py-1">Popular</div>
+                        <div class="icon-box bg-pastel-pink text-pink mb-4 mx-auto d-flex align-items-center justify-content-center mt-3">
+                            <i class="fa-solid fa-store fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">E-Commerce Moderno</h4>
+                        <p class="text-muted mb-0">Tiendas online optimizadas para vender, con catálogos dinámicos y pasarelas de pago integradas.</p>
+                    </div>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="service-card p-5 text-center h-100 position-relative mt-4">
+                        <div class="icon-box bg-pastel-green text-success mb-4 mx-auto d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-bolt fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Landing Pages</h4>
+                        <p class="text-muted mb-0">Diseños enfocados en la conversión. Perfectos para campañas publicitarias y lanzamiento de productos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section (Pastel Wave Background) -->
+    <section id="process" class="py-5 position-relative bg-pastel-wave overflow-hidden">
+        <!-- Floating Elements -->
+        <div class="floating-circle shape-1"></div>
+        <div class="floating-square shape-2"></div>
+
+        <div class="container py-5 position-relative z-index-1">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="pe-lg-5">
+                        <span class="text-primary fw-bold text-uppercase tracking-wide">El Proceso Webdis</span>
+                        <h2 class="display-5 fw-bold mt-2 mb-4">La Magia Detrás de tu Nueva Web</h2>
+                        <ul class="list-unstyled process-list">
+                            <li class="d-flex mb-4">
+                                <div class="process-number bg-white shadow-sm text-primary fw-bold fs-4 d-flex align-items-center justify-content-center rounded-circle flex-shrink-0 me-4">1</div>
+                                <div>
+                                    <h5 class="fw-bold">Descubrimiento & Diseño</h5>
+                                    <p class="text-muted mb-0">Analizamos tus necesidades y creamos prototipos visuales (UI/UX) con paletas de colores exclusivas.</p>
+                                </div>
+                            </li>
+                            <li class="d-flex mb-4">
+                                <div class="process-number bg-white shadow-sm text-pink fw-bold fs-4 d-flex align-items-center justify-content-center rounded-circle flex-shrink-0 me-4">2</div>
+                                <div>
+                                    <h5 class="fw-bold">Desarrollo Mágico</h5>
+                                    <p class="text-muted mb-0">Escribimos código limpio, integramos animaciones de alta calidad y aseguramos velocidad de carga.</p>
+                                </div>
+                            </li>
+                            <li class="d-flex">
+                                <div class="process-number bg-white shadow-sm text-success fw-bold fs-4 d-flex align-items-center justify-content-center rounded-circle flex-shrink-0 me-4">3</div>
+                                <div>
+                                    <h5 class="fw-bold">Lanzamiento & Crecimiento</h5>
+                                    <p class="text-muted mb-0">Hacemos pruebas exhaustivas y lanzamos tu web al mundo, lista para escalar.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
+                    <div class="mockup-container position-relative">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Web Design Dashboard" class="img-fluid rounded-4 shadow-xl glass-img">
+                        <div class="floating-card bg-white p-3 shadow-lg rounded-3 position-absolute">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="icon-sm bg-pastel-green text-success rounded-circle d-flex align-items-center justify-content-center"><i class="fa-solid fa-check"></i></div>
+                                <div>
+                                    <p class="mb-0 fw-bold fs-6">100% Responsivo</p>
+                                    <small class="text-muted">Ajuste perfecto</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Top Wave Divider from Section -->
+        <div class="custom-shape-divider-top-1698263597">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V0H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="text-success fw-bold text-uppercase tracking-wide">Planes de Inversión</span>
+                <h2 class="display-5 fw-bold mt-2">Planes Simples y Transparentes</h2>
+            </div>
+            
+            <div class="row g-4 align-items-center justify-content-center">
+                <!-- Basic Plan -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-card card border-0 shadow-sm h-100">
+                        <div class="card-body p-5">
+                            <h5 class="text-muted mb-3">Esencial</h5>
+                            <h2 class="fw-bold mb-4 display-6">$499 <span class="fs-5 text-muted fw-normal">/ pago único</span></h2>
+                            <ul class="list-unstyled pricing-features mb-5">
+                                <li><i class="fa-solid fa-check text-primary me-2"></i> Landing Page (1 Sección)</li>
+                                <li><i class="fa-solid fa-check text-primary me-2"></i> Diseño Responsivo</li>
+                                <li><i class="fa-solid fa-check text-primary me-2"></i> Formulario de Contacto</li>
+                                <li><i class="fa-solid fa-xmark text-muted me-2 opacity-50"></i> SEO Avanzado</li>
+                                <li><i class="fa-solid fa-xmark text-muted me-2 opacity-50"></i> E-Commerce</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary btn-lg w-100 rounded-pill hover-lift">Elegir Plan</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pro Plan -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-card card border-0 shadow-lg position-relative h-100 transform-scale-lg featured-bg">
+                        <div class="position-absolute top-0 start-50 translate-middle badge bg-white text-primary rounded-pill px-3 py-2 shadow-sm fw-bold">Más Popular</div>
+                        <div class="card-body p-5 text-white">
+                            <h5 class="text-white-50 mb-3">Profesional</h5>
+                            <h2 class="fw-bold mb-4 display-6 text-white">$999 <span class="fs-5 text-white-50 fw-normal">/ pago único</span></h2>
+                            <ul class="list-unstyled pricing-features mb-5">
+                                <li><i class="fa-solid fa-check text-white me-2"></i> Web Completa (Hasta 5 Pares)</li>
+                                <li><i class="fa-solid fa-check text-white me-2"></i> Diseño Premium & Animaciones</li>
+                                <li><i class="fa-solid fa-check text-white me-2"></i> Optimización SEO Básica</li>
+                                <li><i class="fa-solid fa-check text-white me-2"></i> Integración WhatsApp</li>
+                                <li><i class="fa-solid fa-xmark text-white-50 me-2 opacity-50"></i> E-Commerce Completo</li>
+                            </ul>
+                            <a href="#" class="btn btn-light text-primary btn-lg w-100 rounded-pill hover-lift shadow">Elegir Profesional</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ecommerce Plan -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pricing-card card border-0 shadow-sm h-100">
+                        <div class="card-body p-5">
+                            <h5 class="text-muted mb-3">E-Commerce</h5>
+                            <h2 class="fw-bold mb-4 display-6">$1,899 <span class="fs-5 text-muted fw-normal">/ pago único</span></h2>
+                            <ul class="list-unstyled pricing-features mb-5">
+                                <li><i class="fa-solid fa-check text-primary me-2"></i> Todo en Profesional</li>
+                                <li><i class="fa-solid fa-check text-primary me-2"></i> Catálogo Ilimitado</li>
+                                <li><i class="fa-solid fa-check text-primary me-2"></i> Pasarelas de Pago</li>
+                                <li><i class="fa-solid fa-check text-primary me-2"></i> Panel Autogestionable</li>
+                                <li><i class="fa-solid fa-check text-primary me-2"></i> SEO Avanzado</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary btn-lg w-100 rounded-pill hover-lift">Elegir E-Commerce</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark-custom pt-5 pb-3 text-white position-relative overflow-hidden">
+        <!-- SVG Waves Footer -->
+        <div class="custom-shape-divider-top-1698264500">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,119.62,195.03,109.11,236.4,102.32,279.38,71.59,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="container mt-5 position-relative z-index-1">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h3 class="fw-bold mb-3 fs-3">Webdis<span class="text-pink">.</span></h3>
+                    <p class="text-white-50 mb-4 pe-lg-5">Agencia de diseño web experta en crear experiencias digitales fluidas, atractivas y de alto rendimiento usando las últimas tecnologías.</p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="#" class="btn btn-outline-light rounded-circle btn-sm icon-btn"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-light rounded-circle btn-sm icon-btn"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="btn btn-outline-light rounded-circle btn-sm icon-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="btn btn-outline-light rounded-circle btn-sm icon-btn"><i class="fa-brands fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="fw-bold mb-3">Enlaces</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#process">Proceso</a></li>
+                        <li><a href="#pricing">Precios</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <h5 class="fw-bold mb-3">Legal</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6" id="contact">
+                    <h5 class="fw-bold mb-3">Contacto</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2"><i class="fa-solid fa-location-dot me-2 text-primary"></i> Ciudad de México</li>
+                        <li class="mb-2"><i class="fa-solid fa-envelope me-2 text-primary"></i> hola@webdis.com</li>
+                        <li class="mb-2"><i class="fa-solid fa-phone me-2 text-primary"></i> +52 (55) 1234-5678</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-white-50">
+            <div class="text-center text-white-50 pt-3">
+                <p class="mb-0">&copy; 2026 Webdis. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
