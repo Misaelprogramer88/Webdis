@@ -98,8 +98,22 @@ function startMainAnimations() {
         trigger: ".portfolio",
         start: "top 80%",
         end: "bottom 30%",
-        onEnter: () => gsap.to("body", { backgroundColor: "#1B3A5C", color: "#ffffff", duration: 0.4 }),
-        onLeaveBack: () => gsap.to("body", { backgroundColor: "#F7F9FC", color: "#1C1C2E", duration: 0.4 })
+        onEnter: () => {
+            gsap.to("body", { backgroundColor: "#1B3A5C", color: "#ffffff", duration: 0.4 });
+            document.body.classList.add('dark-theme');
+        },
+        onLeave: () => {
+            gsap.to("body", { backgroundColor: "#F7F9FC", color: "#1C1C2E", duration: 0.4 });
+            document.body.classList.remove('dark-theme');
+        },
+        onEnterBack: () => {
+            gsap.to("body", { backgroundColor: "#1B3A5C", color: "#ffffff", duration: 0.4 });
+            document.body.classList.add('dark-theme');
+        },
+        onLeaveBack: () => {
+            gsap.to("body", { backgroundColor: "#F7F9FC", color: "#1C1C2E", duration: 0.4 });
+            document.body.classList.remove('dark-theme');
+        }
     });
 
     // Extra refresh
@@ -111,5 +125,51 @@ window.addEventListener("resize", () => {
     ScrollTrigger.refresh();
 });
 
+// Navbar Scroll Effect
+function initNavbarScroll() {
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    });
+}
+
+// Mobile Menu Logic
+function initMobileMenu() {
+    const mobileBtn = document.querySelector('.mobile-menu-btn');
+    const navLinksContainer = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    if (mobileBtn) {
+        mobileBtn.addEventListener('click', () => {
+            mobileBtn.classList.toggle('active');
+            navLinksContainer.classList.toggle('active');
+            
+            // Prevent scroll when menu is open
+            if(navLinksContainer.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileBtn.classList.remove('active');
+                navLinksContainer.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+    }
+}
+
 // Run Init
-window.addEventListener('load', initSplashScreen);
+window.addEventListener('load', () => {
+    initSplashScreen();
+    initNavbarScroll();
+    initMobileMenu();
+});
+
