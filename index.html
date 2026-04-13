@@ -1,322 +1,187 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webdis - Agencia de Diseño Web Premium</title>
-    <!-- Google Fonts: Outfit -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <title>WEBDIS | Diseño de Vanguardia</title>
+    <meta name="description" content="Agencia de diseño disruptivo y desarrollo de alta gama. WEBDIS rompe el encuadre digital.">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/src/style.css">
 </head>
-<body>
+<body class="loading">
 
-    <!-- Animación de Fondo a Pantalla Completa -->
-    <div class="bg-animation">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
+    <!-- Logo Drawing Intro -->
+    <div id="splash-screen">
+        <div class="splash-logo-container">
+            <svg id="logo-svg" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000.000000 2000.000000" preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,2000.000000) scale(0.100000,-0.100000)" stroke="none">
+                    <path class="logo-path main-w" d="M14113 14566 c-491 -182 -893 -334 -893 -337 0 -3 30 -27 68 -54 103 -75 284 -220 316 -254 37 -38 35 -42 -73 -181 -249 -320 -802 -897 -1276 -1331 -1529 -1400 -3045 -2316 -4445 -2688 -468 -124 -1091 -203 -1464 -187 -622 27 -1004 215 -1181 579 -74 154 -90 237 -90 472 1 169 4 216 23 305 32 147 92 320 149 431 26 52 50 99 52 104 10 23 -189 -167 -258 -248 -251 -291 -380 -568 -412 -881 -31 -309 69 -649 274 -924 445 -599 1300 -940 2211 -882 764 48 1561 281 2556 747 568 267 1078 558 1745 998 482 318 1042 738 1485 1114 607 515 1210 1116 1603 1599 55 67 102 122 106 122 3 0 110 -87 236 -194 126 -107 231 -193 232 -192 5 4 311 1946 316 2000 3 25 1 49 -4 52 -5 3 -8 0 -7 -8 2 -7 -2 -12 -8 -11 -6 1 -11 -5 -11 -12 0 -12 3 -12 16 -2 14 10 14 10 4 -4 -7 -9 -11 -18 -8 -21 3 -2 -1 -5 -9 -5 -8 0 -14 5 -13 10 1 6 -15 11 -35 12 -20 1 -35 -2 -32 -6 2 -4 13 -6 24 -4 11 2 22 1 24 -3 2 -4 -33 -7 -79 -7 -51 0 -83 4 -82 10 1 5 -7 10 -19 9 -11 -1 -21 5 -21 12 0 10 4 11 14 3 7 -6 13 -8 13 -4 0 4 7 1 16 -6 19 -16 42 -20 49 -9 2 4 -5 7 -18 6 -12 0 -21 4 -20 11 1 6 -5 10 -15 8 -22 -3 -54 24 -45 39 3 6 3 8 -2 4 -4 -4 -15 -2 -23 4 -17 15 -44 20 -36 7 3 -5 10 -6 16 -3 7 5 8 2 3 -6 -6 -9 -4 -11 5 -5 9 6 11 4 5 -5 -6 -9 -4 -11 5 -5 9 6 11 4 5 -5 -6 -9 -4 -11 5 -5 9 6 11 4 5 -5 -6 -9 -4 -11 6 -5 8 5 10 4 6 0 -12 -14 -37 -15 -34 -2 1 7 -4 11 -10 10 -7 -2 -12 3 -10 10 1 6 -4 11 -10 10 -7 -2 -12 3 -10 10 1 6 -3 11 -9 10 -12 -2 -13 35 -1 54 5 8 1 11 -11 8 -14 -2 -19 2 -18 18 1 12 5 27 8 33 4 6 2 11 -5 11 -7 0 -414 -149 -904 -331z"/>
+                    <path class="logo-path dot" d="M15023 14865 c0 -6 6 -12 12 -12 6 0 12 6 12 12 0 6 -6 12 -12 12 -6 0 -12 -6 -12 -12z"/>
+                    <path class="logo-path dot" d="M15045 14801 c2 -19 18 -17 21 2 1 8 -4 14 -11 14 -7 0 -12 -7 -10 -16z"/>
+                    <path class="logo-path dot" d="M15246 14688 c3 -5 10 -6 15 -3 13 9 11 12 -6 12 -8 0 -12 -4 -9 -9z"/>
+                    <path class="logo-path part-v" d="M4540 14254 c0 -5 485 -1226 1229 -3091 l452 -1131 67 -9 c117 -14 495 -8 636 11 212 28 633 127 643 152 4 12 -1374 4041 -1390 4062 -7 9 -184 12 -823 12 -448 0 -814 -2 -814 -6z"/>
+                    <path class="logo-path part-v cyan-color" d="M7400 14242 c0 -4 241 -687 535 -1516 294 -830 535 -1515 535 -1523 0 -7 -63 -185 -140 -395 -77 -210 -138 -383 -136 -385 7 -7 287 131 431 212 723 405 1428 936 2122 1601 l73 69 345 959 c190 527 345 965 345 972 0 12 -111 14 -697 12 l-697 -3 -330 -1043 c-299 -943 -332 -1040 -342 -1015 -7 15 -155 480 -330 1033 -175 553 -322 1011 -327 1018 -7 9 -159 12 -698 12 -379 0 -689 -4 -689 -8z"/>
+                    <path class="logo-path text-s" d="M14390 7110 c-226 -61 -342 -193 -366 -415 -12 -122 38 -268 124 -358 57 -59 170 -130 341 -215 220 -109 277 -169 257 -275 -10 -53 -41 -93 -93 -118 -42 -21 -62 -24 -153 -23 -135 1 -217 22 -447 113 l-53 21 0 -166 0 -165 48 -20 c26 -12 90 -33 142 -47 85 -23 114 -26 275 -26 143 -1 193 3 245 17 104 28 186 72 249 132 68 65 105 128 126 216 39 167 -2 324 -111 431 -72 71 -139 114 -338 215 -243 124 -288 175 -256 289 22 76 100 124 203 124 83 0 255 -43 377 -94 14 -6 52 72 127 260 5 13 -119 63 -236 95 -115 32 -358 37 -461 9z"/>
+                    <path class="logo-path text-w" d="M4810 7103 c0 -5 95 -383 212 -840 l212 -833 203 0 202 0 10 38 c118 451 236 927 256 1032 14 74 30 149 34 165 l9 30 1 -27 c2 -58 66 -332 179 -773 l119 -460 204 -3 204 -2 210 826 c116 455 211 833 213 840 3 11 -29 14 -172 14 -97 0 -176 -1 -176 -2 0 -2 -54 -235 -120 -518 -66 -283 -132 -584 -147 -669 -24 -134 -29 -149 -35 -115 -41 232 -87 431 -191 829 l-123 470 -169 3 -170 2 -84 -322 c-171 -661 -190 -738 -214 -879 l-24 -144 -13 75 c-24 145 -51 270 -167 768 l-117 502 -173 0 c-95 0 -173 -3 -173 -7z"/>
+                    <path class="logo-path text-e" d="M7570 6270 l0 -840 485 0 485 0 0 145 0 145 -305 0 -305 0 0 220 0 220 285 0 285 0 0 145 0 145 -285 0 -285 0 0 185 0 185 305 0 305 0 0 145 0 145 -485 0 -485 0 0 -840z"/>
+                    <path class="logo-path text-b" d="M9170 6270 l0 -840 363 0 c319 0 373 3 456 20 301 62 453 258 420 544 -10 91 -34 149 -85 206 -37 42 -122 88 -188 104 -35 8 -26 18 33 36 64 20 132 87 166 162 24 52 30 80 33 160 11 265 -120 392 -451 437 -43 6 -229 11 -413 11 l-334 0 0 -840z m743 516 c72 -35 91 -68 91 -152 -1 -146 -95 -193 -391 -194 l-83 0 0 191 0 191 163 -4 c154 -3 166 -5 220 -32z m8 -649 c89 -40 122 -93 120 -194 -1 -78 -33 -140 -91 -175 -52 -32 -161 -48 -322 -48 l-98 0 0 221 0 221 178 -4 c136 -3 185 -8 213 -21z"/>
+                    <path class="logo-path text-d" d="M11030 6270 l0 -842 338 5 c346 4 399 10 532 54 87 28 190 86 257 142 181 152 263 358 263 661 0 169 -25 285 -86 410 -39 80 -60 108 -134 181 -72 71 -104 94 -181 131 -175 86 -211 91 -626 96 l-363 4 0 -842z m681 536 c231 -49 338 -218 339 -532 0 -252 -82 -422 -242 -497 -71 -34 -204 -57 -324 -57 l-94 0 0 550 0 550 128 0 c70 0 157 -7 193 -14z"/>
+                    <path class="logo-path text-i" d="M13050 6270 l0 -840 180 0 180 0 0 840 0 840 -180 0 -180 0 0 -840z"/>
+                </g>
+            </svg>
+        </div>
     </div>
 
-    <!-- Navegación -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
-        <div class="container">
-            <a class="navbar-brand fw-bold fs-3 brand-text" href="#">Webdis<span class="dot">.</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center gap-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#process">Proceso</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#pricing">Precios</a>
-                    </li>
-                    <li class="nav-item ms-lg-3">
-                        <a class="btn btn-primary rounded-pill px-4 hero-btn" href="#contact">Contactar Ahora</a>
-                    </li>
-                </ul>
-            </div>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">
+            <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 30 L30 80 L50 30 L70 80" stroke="#1C1C2E" stroke-width="12" stroke-linecap="round"/>
+                <path d="M70 80 L90 30" stroke="#00AEEF" stroke-width="12" stroke-linecap="round"/>
+                <path d="M15 75 Q 40 100, 95 30" stroke="#48A9A6" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            WEB<span>DIS</span>
+        </a>
+        <div class="nav-links">
+            <a href="#hero">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#nosotros">Nosotros</a>
         </div>
+        <a href="#contacto" class="nav-cta">Trabajemos Juntos</a>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero d-flex align-items-center position-relative">
-        <div class="container position-relative z-index-1">
-            <div class="row align-items-center min-vh-100">
-                <div class="col-lg-6 text-center text-lg-start" data-aos="fade-right" data-aos-duration="1000">
-                    <span class="badge bg-pastel-pink text-dark rounded-pill mb-3 px-3 py-2 fw-semibold shadow-sm">Impulsa tu Marca 🚀</span>
-                    <h1 class="display-3 fw-bolder mb-4 text-dark hero-title">Diseño Web que Enamora e Inspira.</h1>
-                    <p class="lead text-secondary mb-5 pe-lg-5">En Webdis, transformamos tus ideas en experiencias digitales visualmente atractivas, fluidas y diseñadas para convertir visitas en clientes.</p>
-                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
-                        <a href="#services" class="btn btn-primary rounded-pill btn-lg px-5 shadow-sm hero-btn">Ver Nuestros Diseños</a>
-                        <a href="#contact" class="btn btn-outline-dark rounded-pill btn-lg px-5 hover-lift">Hablar con Expertos <i class="fa-solid fa-arrow-right ms-2 mt-1"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-6 mt-5 mt-lg-0 text-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                    <!-- Animación Lottie de Placeholder -->
-                    <div class="hero-image-wrapper mx-auto">
-                        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                        <lottie-player src="https://lottie.host/80aebfe5-78e7-49cd-a249-f54c9fa30ed8/Vw0Ue5a9yQ.json" background="transparent" speed="1" style="width: 100%; max-width: 600px; height: auto;" loop autoplay></lottie-player>
-                    </div>
+    <main>
+        <!-- Section: Hero (Fuera de Encuadre) -->
+        <section class="hero" id="hero">
+            <div class="marquee-bg">
+                <div class="marquee-content hero-marquee">
+                    <span>CREATIVIDAD • INNOVACIÓN • ESTRATEGIA • DISEÑO •&nbsp;</span>
+                    <span>CREATIVIDAD • INNOVACIÓN • ESTRATEGIA • DISEÑO •&nbsp;</span>
                 </div>
             </div>
-        </div>
-        <!-- Onda inferior (Divider) -->
-        <div class="custom-shape-divider-bottom-1698260000">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,119.62,195.03,109.11,236.4,102.32,279.38,71.59,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-        </div>
-    </section>
+            <div class="hero-content">
+                <span class="hero-tagline">DISEÑO SIN LÍMITES</span>
+                <h1 class="hero-title">
+                    Digital Design<br>
+                    <span>Beyond Frames</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Somos WEBDIS. Rompemos el encuadre para crear experiencias digitales que trascienden lo convencional.
+                </p>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-placeholder">
+                    [HERO_MAIN_IMAGE: Showcase of Agency Portfolio]
+                </div>
+            </div>
+        </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-5 position-relative">
-        <div class="container py-5 z-index-1">
-            <div class="text-center mb-5" data-aos="fade-up">
-                <span class="text-pink fw-bold text-uppercase tracking-wide">Nuestra Especialidad</span>
-                <h2 class="display-5 fw-bold mt-2">Páginas Web a Medida</h2>
-                <p class="text-muted mx-auto" style="max-width: 600px;">Servicios premium enfocados en la estética, el rendimiento y la experiencia de usuario (UX/UI).</p>
-            </div>
-            
-            <div class="row g-4">
-                <!-- Servicio 1 -->
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="service-card p-5 text-center h-100 position-relative mt-4">
-                        <div class="icon-box bg-pastel-blue text-primary mb-4 mx-auto d-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-laptop-code fs-3"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3">Diseño Corporativo</h4>
-                        <p class="text-muted mb-0">Atrae inversores y clientes con una presencia corporativa impecable, rápida y adaptada a móviles.</p>
-                    </div>
+        <!-- Section: Services -->
+        <section id="servicios">
+            <h2 class="section-title" data-aos="fade-up">Nuestra <span>Misión</span></h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <span class="step-num">01</span>
+                    <h3>Estrategia</h3>
+                    <p>Definimos el rumbo de tu marca con análisis profundo y visión futurista.</p>
                 </div>
-                <!-- Servicio 2 -->
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="service-card p-5 text-center h-100 position-relative featured-card shadow-lg">
-                        <div class="badge bg-pink text-white position-absolute top-0 start-50 translate-middle rounded-pill px-3 py-1">Popular</div>
-                        <div class="icon-box bg-pastel-pink text-pink mb-4 mx-auto d-flex align-items-center justify-content-center mt-3">
-                            <i class="fa-solid fa-store fs-3"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3">E-Commerce Moderno</h4>
-                        <p class="text-muted mb-0">Tiendas online optimizadas para vender, con catálogos dinámicos y pasarelas de pago integradas.</p>
-                    </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <span class="step-num">02</span>
+                    <h3>Diseño</h3>
+                    <p>Interfaces disruptivas construidas con precisión estética y funcional.</p>
                 </div>
-                <!-- Servicio 3 -->
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="service-card p-5 text-center h-100 position-relative mt-4">
-                        <div class="icon-box bg-pastel-green text-success mb-4 mx-auto d-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-bolt fs-3"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3">Landing Pages</h4>
-                        <p class="text-muted mb-0">Diseños enfocados en la conversión. Perfectos para campañas publicitarias y lanzamiento de productos.</p>
-                    </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <span class="step-num">03</span>
+                    <h3>Crecimiento</h3>
+                    <p>Optimizamos para que tu presencia digital se traduzca en éxito real.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Why Us Section (Pastel Wave Background) -->
-    <section id="process" class="py-5 position-relative bg-pastel-wave overflow-hidden">
-        <!-- Floating Elements -->
-        <div class="floating-circle shape-1"></div>
-        <div class="floating-square shape-2"></div>
-
-        <div class="container py-5 position-relative z-index-1">
-            <div class="row align-items-center">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <div class="pe-lg-5">
-                        <span class="text-primary fw-bold text-uppercase tracking-wide">El Proceso Webdis</span>
-                        <h2 class="display-5 fw-bold mt-2 mb-4">La Magia Detrás de tu Nueva Web</h2>
-                        <ul class="list-unstyled process-list">
-                            <li class="d-flex mb-4">
-                                <div class="process-number bg-white shadow-sm text-primary fw-bold fs-4 d-flex align-items-center justify-content-center rounded-circle flex-shrink-0 me-4">1</div>
-                                <div>
-                                    <h5 class="fw-bold">Descubrimiento & Diseño</h5>
-                                    <p class="text-muted mb-0">Analizamos tus necesidades y creamos prototipos visuales (UI/UX) con paletas de colores exclusivas.</p>
-                                </div>
-                            </li>
-                            <li class="d-flex mb-4">
-                                <div class="process-number bg-white shadow-sm text-pink fw-bold fs-4 d-flex align-items-center justify-content-center rounded-circle flex-shrink-0 me-4">2</div>
-                                <div>
-                                    <h5 class="fw-bold">Desarrollo Mágico</h5>
-                                    <p class="text-muted mb-0">Escribimos código limpio, integramos animaciones de alta calidad y aseguramos velocidad de carga.</p>
-                                </div>
-                            </li>
-                            <li class="d-flex">
-                                <div class="process-number bg-white shadow-sm text-success fw-bold fs-4 d-flex align-items-center justify-content-center rounded-circle flex-shrink-0 me-4">3</div>
-                                <div>
-                                    <h5 class="fw-bold">Lanzamiento & Crecimiento</h5>
-                                    <p class="text-muted mb-0">Hacemos pruebas exhaustivas y lanzamos tu web al mundo, lista para escalar.</p>
-                                </div>
-                            </li>
-                        </ul>
+        <!-- Section: Portfolio (Dark Mode) -->
+        <section class="portfolio" id="proyectos">
+            <div class="marquee-bg marquee-dark">
+                <div class="marquee-content portfolio-marquee">
+                    <span>PORTFOLIO • PROJECTS • EXHIBITION • SHOWCASE •&nbsp;</span>
+                    <span>PORTFOLIO • PROJECTS • EXHIBITION • SHOWCASE •&nbsp;</span>
+                </div>
+            </div>
+            <h2 class="section-title" style="color: white;" data-aos="fade-up">Proyectos <span>Destacados</span></h2>
+            <div class="portfolio-grid">
+                <div class="project-item" data-aos="fade-up">
+                    <div class="project-placeholder">[CASE_STUDY_1: Minimalist E-Commerce]</div>
+                    <div class="project-info">
+                        <h3>Vantgard</h3>
+                        <p>Branding & Web Design</p>
                     </div>
                 </div>
-                <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
-                    <div class="mockup-container position-relative">
-                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Web Design Dashboard" class="img-fluid rounded-4 shadow-xl glass-img">
-                        <div class="floating-card bg-white p-3 shadow-lg rounded-3 position-absolute">
-                            <div class="d-flex align-items-center gap-3">
-                                <div class="icon-sm bg-pastel-green text-success rounded-circle d-flex align-items-center justify-content-center"><i class="fa-solid fa-check"></i></div>
-                                <div>
-                                    <p class="mb-0 fw-bold fs-6">100% Responsivo</p>
-                                    <small class="text-muted">Ajuste perfecto</small>
-                                </div>
-                            </div>
-                        </div>
+                <div class="project-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-placeholder">[CASE_STUDY_2: High-Tech Dashboard]</div>
+                    <div class="project-info">
+                        <h3>Nexus UI</h3>
+                        <p>Product Design</p>
+                    </div>
+                </div>
+                <div class="project-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-placeholder">[CASE_STUDY_3: Lifestyle Brand Site]</div>
+                    <div class="project-info">
+                        <h3>Aether</h3>
+                        <p>UX/UI Innovation</p>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <!-- Top Wave Divider from Section -->
-        <div class="custom-shape-divider-top-1698263597">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V0H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-            </svg>
-        </div>
-    </section>
+        </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="py-5 bg-white">
-        <div class="container py-5">
-            <div class="text-center mb-5" data-aos="fade-up">
-                <span class="text-success fw-bold text-uppercase tracking-wide">Planes de Inversión</span>
-                <h2 class="display-5 fw-bold mt-2">Planes Simples y Transparentes</h2>
-            </div>
-            
-            <div class="row g-4 align-items-center justify-content-center">
-                <!-- Basic Plan -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="pricing-card card border-0 shadow-sm h-100">
-                        <div class="card-body p-5">
-                            <h5 class="text-muted mb-3">Esencial</h5>
-                            <h2 class="fw-bold mb-4 display-6">$499 <span class="fs-5 text-muted fw-normal">/ pago único</span></h2>
-                            <ul class="list-unstyled pricing-features mb-5">
-                                <li><i class="fa-solid fa-check text-primary me-2"></i> Landing Page (1 Sección)</li>
-                                <li><i class="fa-solid fa-check text-primary me-2"></i> Diseño Responsivo</li>
-                                <li><i class="fa-solid fa-check text-primary me-2"></i> Formulario de Contacto</li>
-                                <li><i class="fa-solid fa-xmark text-muted me-2 opacity-50"></i> SEO Avanzado</li>
-                                <li><i class="fa-solid fa-xmark text-muted me-2 opacity-50"></i> E-Commerce</li>
-                            </ul>
-                            <a href="#" class="btn btn-outline-primary btn-lg w-100 rounded-pill hover-lift">Elegir Plan</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Pro Plan -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="pricing-card card border-0 shadow-lg position-relative h-100 transform-scale-lg featured-bg">
-                        <div class="position-absolute top-0 start-50 translate-middle badge bg-white text-primary rounded-pill px-3 py-2 shadow-sm fw-bold">Más Popular</div>
-                        <div class="card-body p-5 text-white">
-                            <h5 class="text-white-50 mb-3">Profesional</h5>
-                            <h2 class="fw-bold mb-4 display-6 text-white">$999 <span class="fs-5 text-white-50 fw-normal">/ pago único</span></h2>
-                            <ul class="list-unstyled pricing-features mb-5">
-                                <li><i class="fa-solid fa-check text-white me-2"></i> Web Completa (Hasta 5 Pares)</li>
-                                <li><i class="fa-solid fa-check text-white me-2"></i> Diseño Premium & Animaciones</li>
-                                <li><i class="fa-solid fa-check text-white me-2"></i> Optimización SEO Básica</li>
-                                <li><i class="fa-solid fa-check text-white me-2"></i> Integración WhatsApp</li>
-                                <li><i class="fa-solid fa-xmark text-white-50 me-2 opacity-50"></i> E-Commerce Completo</li>
-                            </ul>
-                            <a href="#" class="btn btn-light text-primary btn-lg w-100 rounded-pill hover-lift shadow">Elegir Profesional</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Ecommerce Plan -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="pricing-card card border-0 shadow-sm h-100">
-                        <div class="card-body p-5">
-                            <h5 class="text-muted mb-3">E-Commerce</h5>
-                            <h2 class="fw-bold mb-4 display-6">$1,899 <span class="fs-5 text-muted fw-normal">/ pago único</span></h2>
-                            <ul class="list-unstyled pricing-features mb-5">
-                                <li><i class="fa-solid fa-check text-primary me-2"></i> Todo en Profesional</li>
-                                <li><i class="fa-solid fa-check text-primary me-2"></i> Catálogo Ilimitado</li>
-                                <li><i class="fa-solid fa-check text-primary me-2"></i> Pasarelas de Pago</li>
-                                <li><i class="fa-solid fa-check text-primary me-2"></i> Panel Autogestionable</li>
-                                <li><i class="fa-solid fa-check text-primary me-2"></i> SEO Avanzado</li>
-                            </ul>
-                            <a href="#" class="btn btn-outline-primary btn-lg w-100 rounded-pill hover-lift">Elegir E-Commerce</a>
-                        </div>
-                    </div>
+        <!-- Section: Process -->
+        <section class="process-section">
+            <h2 class="section-title" data-aos="fade-up">Nuestro <span>Proceso</span></h2>
+            <div class="process-step" data-aos="fade-right">
+                <span class="step-num">01.</span>
+                <div class="step-text">
+                    <h3>Descubrimiento</h3>
+                    <p>Entendemos tu ADN para proyectarlo al mundo digital.</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer bg-dark-custom pt-5 pb-3 text-white position-relative overflow-hidden">
-        <!-- SVG Waves Footer -->
-        <div class="custom-shape-divider-top-1698264500">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,119.62,195.03,109.11,236.4,102.32,279.38,71.59,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-        </div>
-        <div class="container mt-5 position-relative z-index-1">
-            <div class="row g-4 mb-5">
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <h3 class="fw-bold mb-3 fs-3">Webdis<span class="text-pink">.</span></h3>
-                    <p class="text-white-50 mb-4 pe-lg-5">Agencia de diseño web experta en crear experiencias digitales fluidas, atractivas y de alto rendimiento usando las últimas tecnologías.</p>
-                    <div class="social-links d-flex gap-3">
-                        <a href="#" class="btn btn-outline-light rounded-circle btn-sm icon-btn"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="btn btn-outline-light rounded-circle btn-sm icon-btn"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#" class="btn btn-outline-light rounded-circle btn-sm icon-btn"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#" class="btn btn-outline-light rounded-circle btn-sm icon-btn"><i class="fa-brands fa-dribbble"></i></a>
-                    </div>
+            <div class="process-step" data-aos="fade-left" style="justify-content: flex-end; text-align: right;">
+                <div class="step-text">
+                    <h3>Prototipado</h3>
+                    <p>Iteramos rápido para alcanzar la excelencia visual pronto.</p>
                 </div>
-                <div class="col-lg-2 col-6">
-                    <h5 class="fw-bold mb-3">Enlaces</h5>
-                    <ul class="list-unstyled footer-links">
-                        <li><a href="#home">Inicio</a></li>
-                        <li><a href="#services">Servicios</a></li>
-                        <li><a href="#process">Proceso</a></li>
-                        <li><a href="#pricing">Precios</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-6">
-                    <h5 class="fw-bold mb-3">Legal</h5>
-                    <ul class="list-unstyled footer-links">
-                        <li><a href="#">Términos y Condiciones</a></li>
-                        <li><a href="#">Política de Privacidad</a></li>
-                        <li><a href="#">Cookies</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6" id="contact">
-                    <h5 class="fw-bold mb-3">Contacto</h5>
-                    <ul class="list-unstyled text-white-50">
-                        <li class="mb-2"><i class="fa-solid fa-location-dot me-2 text-primary"></i> Ciudad de México</li>
-                        <li class="mb-2"><i class="fa-solid fa-envelope me-2 text-primary"></i> hola@webdis.com</li>
-                        <li class="mb-2"><i class="fa-solid fa-phone me-2 text-primary"></i> +52 (55) 1234-5678</li>
-                    </ul>
+                <span class="step-num">02.</span>
+            </div>
+            <div class="process-step" data-aos="fade-right">
+                <span class="step-num">03.</span>
+                <div class="step-text">
+                    <h3>Lanzamiento</h3>
+                    <p>Desplegamos soluciones escalables y seguras.</p>
                 </div>
             </div>
-            <hr class="border-white-50">
-            <div class="text-center text-white-50 pt-3">
-                <p class="mb-0">&copy; 2026 Webdis. Todos los derechos reservados.</p>
-            </div>
-        </div>
-    </footer>
+        </section>
 
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Custom JS -->
-    <script src="script.js"></script>
+        <!-- Contact Hub -->
+        <footer id="contacto">
+            <div class="footer-cta" data-aos="zoom-in">
+                <h2>¿Tienes un reto para nosotros?</h2>
+                <button class="footer-btn">CREAR PROYECTO</button>
+            </div>
+            <div class="footer-links">
+                <h4>Social</h4>
+                <a href="#">Instagram</a><br>
+                <a href="#">LinkedIn</a><br>
+                <a href="#">Dribbble</a>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <a href="#">Privacidad</a><br>
+                <a href="#">Términos</a>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="module" src="/src/main.js"></script>
 </body>
 </html>
