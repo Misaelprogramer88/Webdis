@@ -75,22 +75,8 @@ function startMainAnimations() {
     // Refresh ScrollTrigger
     ScrollTrigger.refresh();
 
-    // 1. Hero Reveal (Still handled by GSAP for the smooth sequence)
-    gsap.from(".hero-content > *", {
-        y: 30,
-        autoAlpha: 0,
-        duration: 0.8,
-        stagger: 0.15,
-        ease: "power2.out"
-    });
-
-    gsap.from(".hero-visual", {
-        autoAlpha: 0,
-        x: 40,
-        duration: 1.2,
-        ease: "power2.out"
-    });
-
+    // 1. Hero Reveal (Animations Removed as requested)
+    // Note: Project/Service reveal is now handled by AOS in index.html
     // Note: Project/Service reveal is now handled by AOS in index.html
 
     // 3. Portfolio Background Shift (Handled by GSAP ScrollTrigger)
