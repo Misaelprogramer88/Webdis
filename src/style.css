@@ -198,11 +198,11 @@ body.dark-theme nav.scrolled .nav-links a {
 
 /* Hero Section Artistic */
 .hero {
-    min-height: 100vh;
+    min-height: 80vh;
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     align-items: center;
-    padding-left: 8%;
+    padding: 6rem 8%;
     position: relative;
 }
 
@@ -279,7 +279,7 @@ body.dark-theme nav.scrolled .nav-links a {
 
 /* Sections Base */
 section {
-    padding: 10rem 8%;
+    padding: 6rem 8%;
     position: relative;
     /* Prevent shifting during scroll reveal */
     will-change: transform, opacity;
