@@ -315,6 +315,186 @@ section {
     box-shadow: 30px 30px 0 var(--logo-cian);
 }
 
+/* Modern Services Section */
+.services-modern {
+    background-color: #ffffff;
+    border-top: 1px solid rgba(0,0,0,0.03);
+    border-bottom: 1px solid rgba(0,0,0,0.03);
+}
+
+.services-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.services-subtitle {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: rgba(28, 28, 46, 0.7);
+}
+
+.services-modern-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.modern-service-card {
+    background: #d3e7fa; /* Lighter than var(--bg-acero) */
+    border-radius: 24px;
+    padding: 2.5rem 3rem;
+    border: 1px solid rgba(255,255,255,0.05);
+    box-shadow: 0 20px 40px rgba(27, 58, 92, 0.15);
+    transition: var(--transition-slow);
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.modern-service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top right, rgba(0, 174, 239, 0.1) 0%, transparent 60%);
+    opacity: 0.5;
+    transition: var(--transition-slow);
+}
+
+.modern-service-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 30px 60px rgba(27, 58, 92, 0.25), 0 0 0 1px rgba(0, 174, 239, 0.3);
+}
+
+.modern-service-card:hover::before {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+@keyframes floatIcon {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+}
+
+.service-icon-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 18px;
+    background: rgba(0, 174, 239, 0.15);
+    color: var(--logo-cian);
+    margin-bottom: 2rem;
+    transition: var(--transition-fast);
+    animation: floatIcon 4s ease-in-out infinite;
+    position: relative;
+    z-index: 2;
+}
+
+.modern-service-card:hover .service-icon-wrapper {
+    background: var(--logo-cian);
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 174, 239, 0.3);
+}
+
+.service-icon {
+    width: 34px;
+    height: 34px;
+}
+
+.modern-service-card h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    position: relative;
+    z-index: 2;
+}
+
+.modern-service-card h3 span {
+    color: var(--logo-cian);
+}
+
+.service-desc {
+    color: rgba(56, 56, 56, 0.7);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    min-height: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.service-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(255,255,255,0.1);
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.service-features {
+    list-style: none;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.service-features li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: rgb(70, 70, 70);
+    transition: transform 0.3s ease;
+}
+
+.service-features li:hover {
+    transform: translateX(8px);
+}
+
+.service-features li span {
+    color: var(--logo-cian);
+    font-weight: 600;
+}
+
+.service-features svg {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+.service-btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: transparent;
+    color: rgb(0, 73, 95);
+    border: 1px solid rgb(0, 65, 102);
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition-fast);
+    position: relative;
+    z-index: 2;
+}
+
+.service-btn:hover {
+    background: var(--logo-cian);
+    color: white;
+    border-color: var(--logo-cian);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 174, 239, 0.3);
+}
+
 /* Portfolio Masonry (Off-frame) */
 .portfolio {
     background: var(--bg-acero);
@@ -516,6 +696,7 @@ body.dark-theme nav.scrolled .mobile-menu-btn span {
     }
 
     /* Grids Responsive */
+    .services-modern-grid { grid-template-columns: 1fr; gap: 2rem; }
     .services-grid { grid-template-columns: 1fr; }
     .service-card:nth-child(2) { transform: translateY(0); } /* Remove stagger offset */
     .portfolio-grid { grid-template-columns: 1fr; gap: 4rem; }
