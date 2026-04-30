@@ -512,29 +512,98 @@ section {
     position: relative;
 }
 
-.project-placeholder {
+.project-video-wrapper {
+    position: relative;
     width: 100%;
-    aspect-ratio: 1 / 1;
-    background: linear-gradient(45deg, #121212, #1b3a5c);
-    border-radius: 12px;
+    aspect-ratio: 16 / 10;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #121212;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.project-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.project-video-wrapper:hover .project-video {
+    transform: scale(1.05);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(27, 58, 92, 0.7); /* dark overlay */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(255,255,255,0.05);
-    color: rgba(255,255,255,0.3);
-    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.project-video-wrapper:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-overlay-content {
+    text-align: center;
+    padding: 2rem;
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
+}
+
+.project-video-wrapper:hover .project-overlay-content {
+    transform: translateY(0);
+}
+
+.project-overlay-content h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.project-overlay-content p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1.5rem;
+}
+
+.project-btn {
+    display: inline-block;
+    padding: 0.8rem 2.5rem;
+    background: var(--logo-cian);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: var(--transition-fast);
+}
+
+.project-btn:hover {
+    background: white;
+    color: var(--text-carbon);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.project-title-outside {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    color: white;
 }
 
 .project-item:nth-child(even) {
     margin-top: 15rem;
-}
-
-.project-info {
-    margin-top: 2rem;
-}
-
-.project-info h3 {
-    font-size: 2.5rem;
 }
 
 /* Process Layout */
