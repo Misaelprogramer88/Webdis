@@ -158,4 +158,3 @@ window.addEventListener('load', () => {
     initNavbarScroll();
     initMobileMenu();
 });
-
