@@ -497,9 +497,7 @@ section {
 
 /* Portfolio Masonry (Off-frame) */
 .portfolio {
-    background: var(--bg-acero);
     color: white;
-    transition: background-color 0.8s ease;
 }
 
 .portfolio-grid {
@@ -597,6 +595,95 @@ footer {
 
 body.dark-theme nav.scrolled .mobile-menu-btn span {
     background: white;
+}
+
+/* Cards Marquee for Mision */
+.mision-marquee-section {
+    padding: 8rem 0;
+    overflow: hidden;
+}
+
+.mision-marquee-section .section-title {
+    transition: color 0.4s ease;
+}
+
+body.dark-theme .mision-marquee-section .section-title {
+    color: white;
+}
+
+.mision-marquee-section .section-title {
+    margin-bottom: 3rem;
+}
+
+.title-anim-wrapper {
+    display: inline-block;
+    animation: elegantFloat 5s ease-in-out infinite;
+}
+
+@keyframes elegantFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+.cards-marquee-wrapper {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    display: flex;
+    overflow: hidden;
+}
+
+.cards-marquee-track {
+    display: flex;
+    gap: 3rem;
+    padding: 2rem;
+    /* CSS animation for infinite scroll */
+    animation: scrollCards 45s linear infinite;
+    width: max-content;
+}
+
+.cards-marquee-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scrollCards {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-50% - 1.5rem)); } /* -50% shifts exactly one set of cards, 1.5rem is half of gap */
+}
+
+.marquee-text-card {
+    background: white;
+    padding: 4rem 3rem;
+    border-radius: 20px;
+    width: 450px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.05);
+    flex-shrink: 0;
+    transition: var(--transition-fast);
+}
+
+.marquee-text-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0, 174, 239, 0.2);
+}
+
+.marquee-text-card .fw-title {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-carbon);
+}
+
+.marquee-text-card .fw-title span {
+    color: var(--logo-cian);
+}
+
+.marquee-text-card .fw-text {
+    font-size: 1.1rem;
+    color: rgba(28, 28, 46, 0.8);
+    line-height: 1.6;
 }
 
 @media (max-width: 1024px) {
@@ -704,4 +791,15 @@ body.dark-theme nav.scrolled .mobile-menu-btn span {
     .process-step { flex-direction: column; text-align: center !important; gap: 2rem; }
     .process-step.aos-init { justify-content: center !important; }
     footer { grid-template-columns: 1fr; text-align: center; }
+
+    .marquee-text-card {
+        width: 300px;
+        padding: 3rem 2rem;
+    }
+    .marquee-text-card .fw-title {
+        font-size: 1.8rem;
+    }
+    .marquee-text-card .fw-text {
+        font-size: 1rem;
+    }
 }
