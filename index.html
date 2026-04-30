@@ -81,55 +81,76 @@
         </section>
 
         <!-- Section: Services -->
-        <section class="services-modern" id="servicios">
-            <div class="services-header" data-aos="fade-up">
-                <h2 class="section-title">Nuestros <span>Servicios</span></h2>
-                <p class="services-subtitle">Creamos soluciones web modernas y funcionales para impulsar la presencia digital de tu negocio.</p>
+        <section class="services-glass" id="servicios">
+            <!-- Background Waves -->
+            <div class="wave-bg-top">
+                <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="url(#wave-gradient-top)" fill-opacity="0.6" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+                    <path fill="url(#wave-gradient-top2)" fill-opacity="0.4" d="M0,128L48,149.3C96,171,192,213,288,208C384,203,480,149,576,149.3C672,149,768,203,864,229.3C960,256,1056,256,1152,240C1248,224,1344,192,1392,176L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+                    <defs>
+                        <linearGradient id="wave-gradient-top" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#00AEEF" />
+                            <stop offset="100%" stop-color="#2B6CB0" />
+                        </linearGradient>
+                        <linearGradient id="wave-gradient-top2" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#48A9A6" />
+                            <stop offset="100%" stop-color="#00AEEF" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="wave-bg-bottom">
+                <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="url(#wave-gradient-bot)" fill-opacity="0.6" d="M0,256L48,245.3C96,235,192,213,288,181.3C384,149,480,107,576,122.7C672,139,768,213,864,229.3C960,245,1056,203,1152,192C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                    <path fill="url(#wave-gradient-bot2)" fill-opacity="0.4" d="M0,64L48,106.7C96,149,192,235,288,245.3C384,256,480,192,576,160C672,128,768,128,864,154.7C960,181,1056,235,1152,245.3C1248,256,1344,224,1392,208L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                    <defs>
+                        <linearGradient id="wave-gradient-bot" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#2B6CB0" />
+                            <stop offset="100%" stop-color="#00AEEF" />
+                        </linearGradient>
+                        <linearGradient id="wave-gradient-bot2" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#00AEEF" />
+                            <stop offset="100%" stop-color="#48A9A6" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+
+            <div class="services-glass-header" data-aos="fade-down" data-aos-duration="800">
+                <h2 class="glass-title">SERVICIOS</h2>
             </div>
             
-            <div class="services-modern-grid">
+            <div class="services-glass-grid">
                 <!-- Servicio 1 -->
-                <div class="modern-service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-icon-wrapper">
-                        <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="8" y1="21" x2="16" y2="21"></line>
-                            <line x1="12" y1="17" x2="12" y2="21"></line>
-                        </svg>
+                <div class="glass-card" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="glass-card-inner">
+                        <div class="glass-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3>Landing Page</h3>
+                        <p>Diseño de una sola página altamente optimizada para conversiones. Ideal para campañas, productos específicos o presencia rápida en internet.</p>
+                        <a href="#contacto" class="glass-btn">Ver más</a>
                     </div>
-                    <h3>Landing Page <span>Profesional</span></h3>
-                    <p class="service-desc">Ideal para negocios que necesitan presencia rápida y efectiva en internet.</p>
-                    <div class="service-divider"></div>
-                    <ul class="service-features">
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--logo-cian)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Diseño moderno</span> adaptable a celular</li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--logo-cian)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Botón de <span>WhatsApp</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--logo-cian)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Formulario de <span>contacto</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--logo-cian)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Integración con <span>redes sociales</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--logo-cian)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Optimización básica <span>SEO</span></li>
-                    </ul>
-                    <a href="#contacto" class="service-btn">Solicitar información</a>
                 </div>
 
                 <!-- Servicio 2 -->
-                <div class="modern-service-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-icon-wrapper">
-                        <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                            <line x1="3" y1="9" x2="21" y2="9"></line>
-                            <line x1="9" y1="21" x2="9" y2="9"></line>
-                        </svg>
+                <div class="glass-card" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="glass-card-inner">
+                        <div class="glass-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="3" y1="9" x2="21" y2="9"></line>
+                                <line x1="9" y1="21" x2="9" y2="9"></line>
+                            </svg>
+                        </div>
+                        <h3>Página Informativa con Base de Datos</h3>
+                        <p>Plataforma robusta con múltiples secciones, panel administrable y conexión a base de datos para gestionar tu contenido de forma dinámica.</p>
+                        <a href="#contacto" class="glass-btn">Ver más</a>
                     </div>
-                    <h3>Sitio Web <span>Informativo</span> Administrable</h3>
-                    <p class="service-desc">Perfecto para empresas que necesitan mostrar información y actualizar su contenido fácilmente.</p>
-                    <div class="service-divider"></div>
-                    <ul class="service-features">
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--logo-cian)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Múltiples <span>secciones personalizadas</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--logo-cian)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Catálogo <span>editable</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--logo-cian)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Panel administrador <span>sencillo</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--logo-cian)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Galería de <span>imágenes</span> o servicios</li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--logo-cian)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Formulario de <span>contacto</span></li>
-                    </ul>
-                    <a href="#contacto" class="service-btn">Solicitar información</a>
                 </div>
             </div>
         </section>
