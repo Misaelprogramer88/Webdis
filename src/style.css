@@ -169,7 +169,6 @@ body.dark-theme nav.scrolled .nav-links a {
     top: 50%;
     transform: translateY(-50%);
     width: 100vw;
-    max-width: 100%;
     left: 0;
     overflow: hidden;
     z-index: -1;
@@ -764,10 +763,7 @@ body.dark-theme .mision-marquee-section .section-title {
 
 .cards-marquee-wrapper {
     position: relative;
-    width: 100vw;
-    max-width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
     display: flex;
     overflow: hidden;
 }
