@@ -630,9 +630,38 @@ section {
 }
 
 .project-title-outside {
-    margin-top: 1.5rem;
-    font-size: 2rem;
+    margin-top: 0;
+    font-size: 1.8rem;
     color: white;
+}
+
+.project-info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+.project-btn-outside {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    background: transparent;
+    color: var(--logo-cian);
+    border: 1px solid var(--logo-cian);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: var(--transition-fast);
+    white-space: nowrap;
+}
+
+.project-btn-outside:hover {
+    background: var(--logo-cian);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 174, 239, 0.3);
 }
 
 .project-item:nth-child(even) {
@@ -905,5 +934,36 @@ body.dark-theme .mision-marquee-section .section-title {
     }
     .marquee-text-card .fw-text {
         font-size: 1rem;
+    }
+    /* Portfolio Mobile Fix */
+    .project-overlay-content {
+        padding: 1.5rem;
+    }
+
+    .project-overlay-content h3 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .project-overlay-content p {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.4;
+    }
+
+    .project-btn {
+        padding: 0.6rem 1.8rem;
+        font-size: 0.9rem;
+    }
+
+    .project-info-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+
+    .project-btn-outside {
+        width: 100%;
+        text-align: center;
     }
 }
