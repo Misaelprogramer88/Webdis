@@ -22,6 +22,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    max-width: 100%;
 }
 
 body {
@@ -29,6 +30,8 @@ body {
     color: var(--text-carbon);
     line-height: 1.6;
     font-weight: 400;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 /* Splash Screen Styling */
@@ -166,6 +169,7 @@ body.dark-theme nav.scrolled .nav-links a {
     top: 50%;
     transform: translateY(-50%);
     width: 100vw;
+    max-width: 100%;
     left: 0;
     overflow: hidden;
     z-index: -1;
@@ -761,10 +765,9 @@ body.dark-theme .mision-marquee-section .section-title {
 .cards-marquee-wrapper {
     position: relative;
     width: 100vw;
+    max-width: 100%;
     left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+    transform: translateX(-50%);
     display: flex;
     overflow: hidden;
 }
